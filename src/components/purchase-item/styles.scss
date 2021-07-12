@@ -1,0 +1,22 @@
+@import 'styles/colors.scss';
+
+.purchase-item {
+    margin: 20px 0px;
+
+    &__section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin: 5px 0px;
+    }
+
+    &__dsc {
+        font-size: 13px;
+        text-align: center;
+    }
+}

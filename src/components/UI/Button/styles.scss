@@ -1,0 +1,18 @@
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+.button {
+    background-color: $base-blue-color;
+    font-size: $font-20;
+    border: none;
+    color: $white-color;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+
+    &--mobile {
+        font-size: $font-15;
+        width: 60px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,3 @@
+export const PURCHASE = 'PURCHASE'
+export const PURCHASE_SUCCESS = 'PURCHASE_SUCCESS'
+export const PURCHASE_ERROR = 'PURCHASE_ERROR'
