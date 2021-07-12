@@ -1,0 +1,28 @@
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+.product-item {
+  position: relative;
+  margin: 20px 0px;
+
+  &__counter {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    background-color: $base-blue-color;
+    border-radius: 50%;
+    font-size: $font-12;
+  }
+
+  &__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}

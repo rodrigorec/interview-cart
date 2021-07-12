@@ -5,17 +5,17 @@ import CircularProgress from '@material-ui/core/CircularProgress'
 import './styles.scss'
 
 const Loader = ({ className }) => (
-    <div className={cn('loader', className)}>
-        <CircularProgress />
-    </div>
+  <div className={cn('loader', className)}>
+    <CircularProgress />
+  </div>
 )
 
 Loader.propTypes = {
-    className: PropTypes.string,
+  className: PropTypes.string,
 }
 
 Loader.defaultProps = {
-    className: '',
+  className: '',
 }
 
 export default Loader

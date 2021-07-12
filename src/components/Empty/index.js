@@ -5,21 +5,21 @@ import Title from 'components/UI/Title'
 import './styles.scss'
 
 const Empty = ({ className, text }) => (
-    <div className={cn('empty', className)}>
-        <Card>
-            <Title text={text} hElement={3} />
-        </Card>
-    </div>
+  <div className={cn('empty', className)}>
+    <Card>
+      <Title text={text} hElement={3} />
+    </Card>
+  </div>
 )
 
 Empty.propTypes = {
-    className: PropTypes.string,
-    text: PropTypes.string,
+  className: PropTypes.string,
+  text: PropTypes.string,
 }
 
 Empty.defaultProps = {
-    className: '',
-    text: 'Empty',
+  className: '',
+  text: 'Empty',
 }
 
 export default Empty
