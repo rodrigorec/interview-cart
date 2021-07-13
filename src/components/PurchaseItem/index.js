@@ -7,7 +7,8 @@ import Title from 'components/UI/Title'
 import './styles.scss'
 
 const PurchaseItem = ({
-  purchase: { products, client, payment, className },
+  className,
+  purchase: { products, client, payment },
 }) => {
   const groupArrayOfObjects = useCallback(
     (list, key) => {
@@ -68,8 +69,8 @@ const PurchaseItem = ({
 }
 
 PurchaseItem.propTypes = {
-  purchase: PropTypes.shape(PurchaseType).isRequired,
   className: PropTypes.string,
+  purchase: PropTypes.shape(PurchaseType).isRequired,
 }
 
 PurchaseItem.defaultProps = {
