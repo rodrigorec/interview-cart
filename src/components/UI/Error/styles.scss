@@ -1,0 +1,18 @@
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+.error {
+    background-color: $base-red;
+    color: $white-color;
+    font-weight: bold;
+    font-size: $font-30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    border-radius: 10px;
+
+    &--mobile {
+        font-size: $font-15;
+    }
+}

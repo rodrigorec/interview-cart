@@ -1,0 +1,27 @@
+@import 'styles/colors.scss';
+@import 'styles/fonts.scss';
+
+.purchase-stepper {
+  position: relative;
+  width: 80%;
+  min-height: 250px;
+  background-color: $white-color;
+  padding: 0px 20px;
+
+  &__back {
+    position: absolute !important;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  &__confirm {
+    position: absolute !important;
+    bottom: 10px;
+    left: 100px;
+  }
+
+  &--mobile {
+    width: 100%;
+    padding: 0px;
+  }
+}

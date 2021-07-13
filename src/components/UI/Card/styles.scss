@@ -1,0 +1,15 @@
+@import 'styles/colors.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    min-height: 150px;
+    border-radius: 20px;
+    border: 1px solid $base-blue-color;
+    box-shadow: 10px 5px 5px $base-gray;
+    background-color: white;
+    padding: 10px 0px;
+}

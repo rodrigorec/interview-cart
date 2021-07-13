@@ -1,5 +1,4 @@
-const sleep = (ms) =>
-  new Promise(resolve => setTimeout(resolve, ms))
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 export const getProducts = async () => {
   await sleep(500)
