@@ -26,8 +26,10 @@ const PurchaseItem = ({
     [products]
   )
 
-  const cleanItemDescription = useCallback(product =>
-    JSON.stringify(product).replace(/[{}"]/g, ''), []);
+  const cleanItemDescription = useCallback(
+    product => JSON.stringify(product).replace(/[{}"]/g, ''),
+    []
+  )
 
   return (
     <Card
@@ -36,11 +38,12 @@ const PurchaseItem = ({
     >
       <div className="purchase-item__section">
         <Title className="purchase-item__title" text="Product" hElement={5} />
-        {groupArrayOfObjects(products, 'name').map(product => (
-          <span className="purchase-item__dsc">
-            {cleanItemDescription(product)}
-          </span>
-        ))}
+        {products &&
+          groupArrayOfObjects(products, 'name').map(product => (
+            <span className="purchase-item__dsc">
+              {cleanItemDescription(product)}
+            </span>
+          ))}
       </div>
       <div className="purchase-item__section">
         <Title
